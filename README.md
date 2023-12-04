@@ -1,19 +1,20 @@
-# AI-search
+# AI search
 A pathfinding algorithm implementation utilizing IDS, BDS, A*, IDA*, and a heuristic-based approach
-# Matrix Navigation Project
 
 ## Overview
 
-This project involves navigating through a matrix from a specified 'start' point to a 'goal' point, considering various elements in the matrix that affect the score during traversal. The matrix contains specific symbols, each with unique meanings:
+This project involves navigating through a matrix from a specified 'start' point to a 'goal' point, considering various elements in the matrix that affect the score during traversal. we should start from the 'start' point and traverse the matrix until reaching the 'goal' point. Each element can be crossed only once. we must reach the 'goal' point with a total score greater than the score in the 'goal' house.
+
+The matrix contains specific symbols, each with unique meanings:
 
 - `s`: Start point with an initial score.
 - `g`: Goal point that we aim to reach with a specific required score.
 - `w`: Wall elements that cannot be crossed.
 - `a`: Passing through adds the number in the element to the score.
 - `b`: Passing through subtracts the number in the element from the score.
-- Mathematical operators: Apply the operator to the current score based on the value in the element.
+- `Mathematical operators`: Apply the operator to the current score based on the value in the element.
 
-## Algorithms Implemented
+## Implemented Algorithms
 
 1. **Iterative Deepening Search (IDS):**
    - Implemented using Breadth-First Search (BFS).
@@ -48,4 +49,8 @@ This project involves navigating through a matrix from a specified 'start' point
 - A heuristic is utilized in A* and IDA* to guide the search towards the goal efficiently.
 
 ## Usage
+
+- Algorithms are implemented in `src-java/AI/`.
+- Select the algorithm and run `src-java/core/main.java`.
+- Sample inputs are available in `test-cases/` 
 
