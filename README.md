@@ -41,12 +41,7 @@ The matrix contains specific symbols, each with unique meanings:
   
 5. **Heuristic Function:**
    - A heuristic function is implemented to calculate the distance between the current step and the 'goal.'
-
-## Implementation Details
-
-- The project involves traversing the matrix while considering score modifications based on the type of element.
-- IDS and BDS are implemented using BFS for efficient exploration.
-- A heuristic is utilized in A* and IDA* to guide the search towards the goal efficiently.
+     
 
 ## Usage
 
